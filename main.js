@@ -12,7 +12,7 @@ const films = [
         title: "Superman",
         genre: "Azione",
         duration: "129 min",
-        poster: "Copertine/superman.jpg",
+        poster: "copertine/superman.jpg",
         showings: [
             { date: "2025-07-15", time: "20:30" },
             { date: "2025-07-16", time: "20:30" },
@@ -26,7 +26,7 @@ const films = [
         title: "F1 - Il film",
         genre: "Azione",
         duration: "155 min",
-        poster: "Copertine/f_one_ver2.jpg",
+        poster: "copertine/f_one_ver2.jpg",
         showings: [
             { date: "2025-07-14", time: "16:00" },
             { date: "2025-07-14", time: "18:30" },
@@ -42,7 +42,7 @@ const films = [
         title: "Jurassic",
         genre: "Azione",
         duration: "155 min",
-        poster: "Copertine/jurassic_world_rebirth_ver8.jpg",
+        poster: "copertine/jurassic_world_rebirth_ver8.jpg",
         showings: [
             { date: "2025-07-14", time: "16:00" },
             { date: "2025-07-14", time: "18:30" },
