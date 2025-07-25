@@ -480,8 +480,22 @@ body {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100%;
+        right: 2rem;
+        width: 200px;
+        padding: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        z-index: 1001;
     }
     
+    .nav-links.active {
+        display: flex;
+    }
+
     .mobile-menu {
         display: flex;
     }
@@ -496,6 +510,10 @@ body {
     
     .section-title {
         font-size: 2rem;
+    }
+
+     .header {
+        padding: 1rem 2rem;
     }
 
     .hero {

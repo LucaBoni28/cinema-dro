@@ -189,13 +189,15 @@ function loadProgrammazione() {
 }
 
 // Functions to show additional information
-function showContributions() {
-    alert('Sezione in costruzione. Qui verranno mostrati tutti i contributi pubblici ricevuti dall\'associazione con dettagli su importi, finalità e utilizzo dei fondi.');
-}
 
-function showPNRRProjects() {
-    alert('Sezione in costruzione. Qui verranno mostrati tutti i progetti finanziati dal PNRR con cronologie, obiettivi e risultati raggiunti.');
-}
+// function showContributions() {
+//     alert('Sezione in costruzione. Qui verranno mostrati tutti i contributi pubblici ricevuti dall\'associazione con dettagli su importi, finalità e utilizzo dei fondi.');
+// }
+
+// function showPNRRProjects() {
+//     alert('Sezione in costruzione. Qui verranno mostrati tutti i progetti finanziati dal PNRR con cronologie, obiettivi e risultati raggiunti.');
+// }
+
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
@@ -258,4 +260,11 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(card);
         });
     }, 100);
+
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 });
