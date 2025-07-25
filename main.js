@@ -263,8 +263,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const mobileMenu = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
 
+    // Toggle menu mobile
     mobileMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+
+    // Chiudi menu al click su un link
+    navItems.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+    
 });
