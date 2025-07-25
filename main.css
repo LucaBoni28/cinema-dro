@@ -71,7 +71,7 @@ body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(175deg, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.8), rgba(255, 107, 53, 0.7)),
-    url('immagini/oratoriolaterale.jpg') center/cover no-repeat;
+    url('./immagini/oratoriolaterale.jpg') center/cover no-repeat;
 }
 
 .hero::before {
@@ -154,7 +154,7 @@ body {
 .section:nth-of-type(2) {
     background: 
         linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-        url('immagini/oratoriofrontale.jpg ') center/cover no-repeat;
+        url('./immagini/oratoriofrontale.jpg ') center/cover no-repeat;
 }
 
 .book-button {
