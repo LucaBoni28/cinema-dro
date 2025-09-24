@@ -1,12 +1,12 @@
 // Cinema Dro - JavaScript Functions
 
-// Function to show booking information
+// Funzione per mostrare informazione per prenotazioni
 function showBookingInfo(filmTitle) {
     alert(`Per prenotare "${filmTitle}" puoi:\n\n📞 Chiamare: 0464 544000\n✉️ Email: info.cinemadro@gmail.com\n\nGli orari di segreteria sono:\nLunedì-Venerdì: 9:00-12:00 e 15:00-18:00`);
 }
 
-// Sample data for programming
-// Per cercare la copertina: http://www.impawards.com/
+// Informazione programmazione corrente
+// Per cercare la copertina dei film: http://www.impawards.com/
 const films = [
     {
         title: "Superman",
@@ -57,7 +57,7 @@ const films = [
     
 ];
 
-// Function to format date
+// Funzione per formato data
 function formatDate(dateString) {
     const date = new Date(dateString);
     const options = { 
@@ -68,7 +68,7 @@ function formatDate(dateString) {
     return date.toLocaleDateString('it-IT', options);
 }
 
-// Function to group showings by date
+// Funzione per mostra gruppi in base alla Function to group showings by date
 function groupShowingsByDate(showings) {
     const grouped = {};
     showings.forEach(showing => {
@@ -80,7 +80,7 @@ function groupShowingsByDate(showings) {
     return grouped;
 }
 
-// Function to generate schedule HTML
+// Funzione per generare il calendario HTML
 function generateScheduleHTML(showings) {
     if (!showings || showings.length === 0) {
         return '<div class="no-showings">Nessuna programmazione disponibile</div>';
@@ -105,7 +105,7 @@ function generateScheduleHTML(showings) {
     return html;
 }
 
-// Function to handle button click
+// Funzione per gestire click bottone "Prenota"
 function handleBookingClick(filmIndex) {
     console.log('handleBookingClick called with index:', filmIndex);
     
@@ -129,7 +129,7 @@ function handleBookingClick(filmIndex) {
     }
 }
 
-// Function to load programming
+// Funzione per caricare la programmazione
 function loadProgrammazione() {
     const container = document.getElementById('filmsContainer');
     
