@@ -42,10 +42,7 @@ const films = [
         duration: "155 min",
         poster: "immagini/jurassic_world_rebirth_ver8.jpg",
         showings: [
-            { date: "2025-07-15", time: "20:30" },
-            { date: "2025-07-16", time: "20:30" },
-            { date: "2025-07-17", time: "18:00" },
-            { date: "2025-07-18", time: "20:30" }            
+                      
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
         note: "In arrivoo subito...."
