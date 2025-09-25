@@ -28,12 +28,7 @@ const films = [
         duration: "155 min",
         poster: "immagini/f_one_ver2.jpg",
         showings: [
-            { date: "2025-07-14", time: "16:00" },
-            { date: "2025-07-14", time: "18:30" },
-            { date: "2025-07-15", time: "16:00" },
-            { date: "2025-07-20", time: "16:00" },
-            { date: "2025-07-21", time: "16:00" },
-            { date: "2025-07-21", time: "18:30" }
+            
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
         note: ""
@@ -44,7 +39,7 @@ const films = [
         duration: "155 min",
         poster: "immagini/jurassic_world_rebirth_ver8.jpg",
         showings: [
-            { date: "2025-07-21", time: "18:30" }
+            
             
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
