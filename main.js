@@ -35,17 +35,6 @@ const films = [
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
         note: ""
-    },
-    {
-        title: "Jurassic",
-        genre: "Azione",
-        duration: "155 min",
-        poster: "immagini/jurassic_world_rebirth_ver8.jpg",
-        showings: [
-                      
-        ],
-        bookingUrl: "https://ticket.cinebot.it/dro/",
-        note: "In arrivoo subito...."
     }
     
 ];
