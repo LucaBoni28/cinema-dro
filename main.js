@@ -44,7 +44,7 @@ const films = [
         duration: "155 min",
         poster: "immagini/jurassic_world_rebirth_ver8.jpg",
         showings: [
-            
+            { date: "2025-07-14", time: "16:00" },
             
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
