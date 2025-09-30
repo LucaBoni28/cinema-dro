@@ -35,6 +35,20 @@ const films = [
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
         note: ""
+    },
+    {
+        title: "Jurassic World",
+        genre: "Azione",
+        duration: "155 min",
+        poster: "immagini/f_one_ver2.jpg",
+        showings: [
+            { date: "2025-08-15", time: "21:00" },
+            { date: "2025-02-10", time: "16:30" },
+            { date: "2025-07-01", time: "18:00" },
+            { date: "2025-04-12", time: "20:30" }
+        ],
+        bookingUrl: "https://ticket.cinebot.it/dro/",
+        note: ""
     }
     
 ];
