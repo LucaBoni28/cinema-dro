@@ -19,6 +19,17 @@ const films = [
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
         note: ""
+    },
+    {
+        title: "Altri film in arrivo",
+        genre: "",
+        duration: "",
+        poster: "",
+        showings: [
+            
+        ],
+        bookingUrl: "",
+        note: ""
     }
      
     
