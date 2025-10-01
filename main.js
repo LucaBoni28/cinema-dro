@@ -12,23 +12,12 @@ const films = [
         title: "Il mio amico pinguino",
         genre: "Family, Avventura",
         duration: "98 min",
-        poster: "immagini/superman.jpg",
+        poster: "immagini/superman_ver2.jpg",
         showings: [
             { date: "2025-10-04", time: "21:00" },
             { date: "2025-10-05", time: "21:30" }
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
-        note: ""
-    },
-    {
-        title: "Altri film in arrivo",
-        genre: "",
-        duration: "",
-        poster: "",
-        showings: [
-            
-        ],
-        bookingUrl: "",
         note: ""
     }
      
