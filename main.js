@@ -9,43 +9,18 @@ function showBookingInfo(filmTitle) {
 // Per cercare la copertina dei film: http://www.impawards.com/
 const films = [
     {
-        title: "Superman",
-        genre: "Azione",
-        duration: "129 min",
-        poster: "immagini/superman.jpg",
+        title: "Il mio amico pinguino",
+        genre: "Family, Avventura",
+        duration: "98 min",
+        poster: "immagini/locandina.jpg",
         showings: [
-            { date: "2025-07-15", time: "20:30" },
-            { date: "2025-07-16", time: "20:30" },
-            { date: "2025-07-17", time: "18:00" },
-            { date: "2025-07-18", time: "20:30" }
+            { date: "2025-10-04", time: "21:00" },
+            { date: "2025-10-05", time: "21:30" }
         ],
-        bookingUrl: "https://ticket.cinebot.it/dro/",
+        bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
         note: ""
-    },
-    {
-        title: "F1 - Il film",
-        genre: "Azione",
-        duration: "155 min",
-        poster: "immagini/f_one_ver2.jpg",
-        showings: [
-            { date: "2025-07-15", time: "20:30" },
-            { date: "2025-07-16", time: "20:30" },
-            { date: "2025-07-17", time: "18:00" },
-            { date: "2025-07-18", time: "20:30" }
-        ],
-        bookingUrl: "https://ticket.cinebot.it/dro/",
-        note: ""
-    },
-     {
-         title: "Jurassic World",
-         genre: "Azione",
-         duration: "155 min",
-         poster: "immagini/f_one_ver2.jpg",
-         showings: [
-         ],
-        bookingUrl: "https://ticket.cinebot.it/dro/",
-        note: ""
-     }
+    }
+     
     
 ];
 
