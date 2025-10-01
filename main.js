@@ -12,7 +12,7 @@ const films = [
         title: "Il mio amico pinguino",
         genre: "Family, Avventura",
         duration: "98 min",
-        poster: "immagini/locandina.jpg",
+        poster: "immagini/superman.jpg",
         showings: [
             { date: "2025-10-04", time: "21:00" },
             { date: "2025-10-05", time: "21:30" }
