@@ -227,7 +227,7 @@ body {
 
 .programmazione-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
     gap: 2rem;
     justify-content: center;
 }
