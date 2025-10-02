@@ -23,7 +23,7 @@ const films = [
         title: "Film di prova",
         genre: "Family",
         duration: "100 min",
-        poster: "immagini/superman.jpg",
+        poster: "immagini/locandina.jpg",
         showings: [
             { date: "2025-10-04", time: "2:00" },
             { date: "2025-10-10", time: "21:30" }
