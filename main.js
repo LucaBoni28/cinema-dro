@@ -35,7 +35,7 @@ function formatDate(dateString) {
     return date.toLocaleDateString('it-IT', options);
 }
 
-// Funzione per mostra gruppi in base alla Function to group showings by date
+// Funzione per mostra gruppi in base alla data
 function groupShowingsByDate(showings) {
     const grouped = {};
     showings.forEach(showing => {

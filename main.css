@@ -227,8 +227,9 @@ body {
 
 .programmazione-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
     gap: 2rem;
+    justify-content: center;
 }
 
 .film-card {
@@ -238,6 +239,8 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    max-width: 350px;
+    width: 100%;
 }
 
 .film-card:hover {
@@ -248,7 +251,7 @@ body {
 
 .film-poster {
     width: 100%;
-    height: 500px;
+    height: 420px;
     position: relative;
     overflow: hidden;
     background: linear-gradient(45deg, #ff6b35, #2a5298);
@@ -257,6 +260,12 @@ body {
     justify-content: center;
     color: white;
     font-size: 3rem;
+}
+
+.film-poster[style*="background-image"] {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .film-poster::before {
