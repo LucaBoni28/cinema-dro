@@ -14,8 +14,7 @@ const films = [
         duration: "98 min",
         poster: "immagini/superman_ver2.jpg",
         showings: [
-            { date: "2025-10-04", time: "21:00" },
-            { date: "2025-10-05", time: "21:30" }
+            
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
         note: ""
