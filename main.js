@@ -48,7 +48,7 @@ function groupShowingsByDate(showings) {
 // Funzione per generare il calendario HTML
 function generateScheduleHTML(showings) {
     if (!showings || showings.length === 0) {
-        return '<div class="no-showings">Prossimamente</div>';
+        return '<div class="no-showings" style="font-weight: bold;">Prossimamente</div>';
     }
 
     const grouped = groupShowingsByDate(showings);
