@@ -43,6 +43,30 @@ const films = [
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
         note: ""
+    },
+    {
+        title: "Film di prova",
+        genre: "Non lo so",
+        duration: "98 min",
+        poster: "immagini/superman_ver2.jpg",
+        showings: [
+            { date: "2025-10-10", time: "22:00" },
+            { date: "2025-11-05", time: "21:30" }
+        ],
+        bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
+        note: ""
+    },
+    {
+        title: "Film di prova",
+        genre: "Non lo so",
+        duration: "98 min",
+        poster: "immagini/superman_ver2.jpg",
+        showings: [
+            { date: "2025-10-10", time: "22:00" },
+            { date: "2025-11-05", time: "21:30" }
+        ],
+        bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
+        note: ""
     }
     
 ];
