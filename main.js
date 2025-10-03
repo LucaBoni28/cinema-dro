@@ -12,25 +12,51 @@ const films = [
         title: "Il mio amico pinguino",
         genre: "Family, Avventura",
         duration: "98 min",
-        poster: "immagini/superman_ver2.jpg",
+        poster: "immagini/locandina.jpg",
         showings: [
             
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
         note: ""
+        
     },
-    {
-        title: "Film di prova",
-        genre: "Family",
-        duration: "100 min",
-        poster: "immagini/locandina.jpg",
-        showings: [
-            { date: "2025-10-04", time: "2:00" },
-            { date: "2025-10-10", time: "21:30" }
-        ],
-        bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
-        note: ""
-    }
+        {
+            title: "The Life of Chuck",
+            genre: "Family",
+            duration: "100 min",
+            poster: "immagini/locandina.jpg",
+            showings: [
+                { date: "2025-10-11", time: "21:00" },
+                { date: "2025-10-12", time: "21:00" }
+            ],
+            bookingUrl: "",
+            note: ""
+
+        },
+        {
+            title: "Dalai Lama - La Saggezza della Felicità",
+            genre: "Documentario",
+            duration: "94 min",
+            poster: "immagini/jurassic_world_rebirth_ver8.jpg",
+            showings: [
+                { date: "2025-10-13", time: "21:00" },
+                { date: "2025-10-15", time: "21:00" }
+            ],
+            bookingUrl: "",
+            note: ""
+        },
+        {
+            title: "Il Padre dell'anno",
+            genre: "",
+            duration: "94 min",
+            poster: "immagini/f1.jpg",
+            showings: [
+                { date: "2025-10-13", time: "21:00" },
+                { date: "2025-10-15", time: "21:00" }
+            ],
+            bookingUrl: "",
+            note: ""
+        }
     
      
     
