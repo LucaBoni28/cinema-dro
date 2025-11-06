@@ -13,6 +13,7 @@ const films = [
         genre: "Azione",
         duration: "129 min",
         poster: "immagini/superman.jpg",
+        isPremiere: true,
         showings: [
             { date: "2025-07-15", time: "20:30" },
             { date: "2025-07-16", time: "20:30" },
@@ -27,6 +28,7 @@ const films = [
         genre: "Azione",
         duration: "155 min",
         poster: "immagini/f_one_ver2.jpg",
+        isPremiere: true,
         showings: [
             { date: "2025-07-14", time: "16:00" },
             { date: "2025-07-14", time: "18:30" },
@@ -43,16 +45,13 @@ const films = [
         genre: "Azione",
         duration: "155 min",
         poster: "immagini/jurassic_world_rebirth_ver8.jpg",
+        isPremiere: false,
         showings: [
-            { date: "2025-07-14", time: "16:00" },
-            { date: "2025-07-14", time: "18:30" },
-            { date: "2025-07-15", time: "16:00" },
-            { date: "2025-07-20", time: "16:00" },
-            { date: "2025-07-21", time: "16:00" },
-            { date: "2025-07-21", time: "18:30" }
+            
+           
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
-        note: ""
+        note: "Date in arrivo"
     }
     
 ];
@@ -153,6 +152,7 @@ function loadProgrammazione() {
         // Creazione del poster per film
         filmCard.innerHTML = `
             <div class="film-poster" ${posterStyle}>
+                ${film.isPremiere ? '<div class="premiere-badge">Prima Visione</div>' : ''}
                 ${!film.poster ? '🎬' : ''}
             </div>
             <div class="film-info">

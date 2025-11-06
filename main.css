@@ -154,7 +154,7 @@ body {
 .section:nth-of-type(2) {
     background: 
         linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-        url('./immagini/oratoriofrontale.jpg ') center/cover no-repeat;
+        url('./immagini/oratoriofrontale.jpg') center/cover no-repeat;
 }
 
 .book-button {
@@ -217,17 +217,18 @@ body {
 }
 
 .feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(45deg, #ff6b35, #ffd93d);
-    -webkit-background-clip: text;
+    font-size: 2rem;
+    margin-bottom: 1rem;  
+    /* color: transparent;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; */
 }
 
 .programmazione-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;       /* <-- Aggiunto (permetti ai film di andare a capo) */
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -238,6 +239,10 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    flex-basis: 380px;  /* La nostra larghezza minima (sostituisce il 'min' di minmax) */
+    flex-grow: 1;       /* Permetti di crescere (sostituisce '1fr' di minmax) */
+    flex-shrink: 0;
+    max-width: 380px;   /* Evita che un film singolo diventi GIGANTE */
 }
 
 .film-card:hover {
@@ -475,6 +480,104 @@ body {
     background: #333;
     margin: 3px 0;
     transition: 0.3s;
+}
+
+/* --- Stili per Badge Prima Visione --- */
+.premiere-badge {
+    position: centered;
+    /* top: 220px;
+    left: 28px; */
+    background: linear-gradient(45deg, #ff6b35, #ffd93d);
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    z-index: 3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: rotate(-10deg);
+    border-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+/* --- Stili per Pulsante Download Locandina --- */
+.download-poster-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #2a5298, #1e3c72); /* Colore blu coordinato */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto 2.5rem auto; /* Centra e distanzia */
+    display: block; /* Per centrarlo */
+    width: fit-content;
+}
+
+.download-poster-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(42, 82, 152, 0.4);
+}
+
+/* --- Stili per Sezione Tariffe --- */
+.price-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.price-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.price-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.price-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2a5298;
+}
+
+.price-list {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.price-list li {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+.price-list li strong {
+    color: #ff6b35;
+}
+
+.price-note {
+    font-size: 1rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {

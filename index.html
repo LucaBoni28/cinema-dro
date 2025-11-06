@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema Dro - Teatro Oratorio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="main.css">
 
 </head>
@@ -46,6 +47,11 @@
     <section class="section" id="programmazione">
         <div class="container">
             <h2 class="section-title">Programmazione Corrente</h2>
+
+            <a href="immagini/Locandina.jpg" download="Locandina-Cinema-Dro.jpg" class="download-poster-button">
+                Scarica la Locandina
+            </a>
+
             <div class="programmazione-container" id="filmsContainer">
                 <!-- I film verranno caricati dinamicamente -->
             </div>
@@ -57,21 +63,48 @@
             <h2 class="section-title">La Nostra Offerta</h2>
             <div class="features">
                 <div class="feature-card">
-                    <div class="feature-icon">🎬</div>
+                    <div class="feature-icon"><i class="fa-solid fa-clapperboard"></i></div>
                     <h3>Cinema di Qualità</h3>
                     <p>Proiezioni dei migliori film in un ambiente accogliente e familiare. Programmazione accurata per tutte le età.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🎭</div>
+                    <div class="feature-icon"><i class="fa-solid fa-masks-theater"></i></div>
                     <h3>Teatro Oratorio</h3>
                     <p>Spettacoli teatrali, eventi culturali e rappresentazioni che animano la nostra comunità.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
                     <h3>Per Tutta la Famiglia</h3>
                     <p>Un cinema parrocchiale che offre intrattenimento sano e di valore per grandi e piccini.</p>
                 </div>
             </div>
+
+            <!-- <h2 class="section-title">Tariffe</h2> -->
+                <div class="price-container">
+
+                    <div class="price-card">
+                        <div class="price-icon">🎟️</div>
+                        <h3>Biglietti Singoli</h3>
+                        <p>il tuo biglietto per la singola proiezione.</p>
+                        <ul class="price-list">
+                            <li><strong>Intero:</strong> 7,00 €</li>
+                            <li><strong>Ridotto:</strong> 5,00 €</li>
+                        </ul>
+                        <p class="price-note">(La tariffa ridotta è valida fino ai 18 anni compiuti)</p>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-icon">🎫</div>
+                        <h3>Abbonamenti</h3>
+                        <p>Risparmia con i nostri pacchetti di ingressi.</p>
+                        <ul class="price-list">
+                            <li><strong>Ridotto 10 Ingressi:</strong> 25,00 €</li>
+                            <li><strong>Intero 10 Ingressi:</strong> 45,00 €</li>
+                        </ul>
+                        <p class="price-note">(Gli abbonamenti hanno validità annuale dal momento del pagamento)</p>
+                    </div>
+
+                </div>
         </div>
     </section>
 
