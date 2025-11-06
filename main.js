@@ -1,12 +1,13 @@
 // Cinema Dro - JavaScript Functions
 
-// Function to show booking information
+// Funzione per mostrare informazione per prenotazioni
 function showBookingInfo(filmTitle) {
-    alert(`Per prenotare "${filmTitle}" puoi:\n\n📞 Chiamare: 0464 544000\n✉️ Email: info.cinemadro@gmail.com\n\nGli orari di segreteria sono:\nLunedì-Venerdì: 9:00-12:00 e 15:00-18:00`);
+    //alert(`Per prenotare "${filmTitle}" puoi:\n\n📞 Chiamare: 0464 544000\n✉️ Email: info.cinemadro@gmail.com\n\nGli orari di segreteria sono:\nLunedì-Venerdì: 9:00-12:00 e 15:00-18:00`);
+    alert(`Presto sarà disponibile prenotare per "${filmTitle}"`);
 }
 
-// Sample data for programming
-// Per cercare la copertina: http://www.impawards.com/
+// Informazione programmazione corrente
+// Per cercare la copertina dei film: http://www.impawards.com/
 const films = [
     {
         title: "Superman",
@@ -15,12 +16,9 @@ const films = [
         poster: "immagini/superman.jpg",
         isPremiere: true,
         showings: [
-            { date: "2025-07-15", time: "20:30" },
-            { date: "2025-07-16", time: "20:30" },
-            { date: "2025-07-17", time: "18:00" },
-            { date: "2025-07-18", time: "20:30" }
+            
         ],
-        bookingUrl: "https://ticket.cinebot.it/dro/",
+        bookingUrl: "https://ticket.cinebot.it/dro/titolo/557_il-mio-amico-pinguin",
         note: ""
     },
     {
@@ -30,33 +28,43 @@ const films = [
         poster: "immagini/f_one_ver2.jpg",
         isPremiere: true,
         showings: [
-            { date: "2025-07-14", time: "16:00" },
-            { date: "2025-07-14", time: "18:30" },
-            { date: "2025-07-15", time: "16:00" },
-            { date: "2025-07-20", time: "16:00" },
-            { date: "2025-07-21", time: "16:00" },
-            { date: "2025-07-21", time: "18:30" }
+            { date: "2025-10-11", time: "21:00" },
+            { date: "2025-10-12", time: "21:00" }
         ],
-        bookingUrl: "https://ticket.cinebot.it/dro/",
+        bookingUrl: "",
         note: ""
+
     },
     {
-        title: "Jurassic",
-        genre: "Azione",
-        duration: "155 min",
+        title: "Dalai Lama - La Saggezza della Felicità",
+        genre: "Documentario",
+        duration: "94 min",
         poster: "immagini/jurassic_world_rebirth_ver8.jpg",
         isPremiere: false,
         showings: [
-            
-           
+            { date: "2025-10-13", time: "21:00" },
+            { date: "2025-10-15", time: "21:00" }
+        ],
+        bookingUrl: "",
+        note: ""
+    },
+    {
+        title: "Il Padre dell'anno",
+        genre: "",
+        duration: "94 min",
+        poster: "immagini/f1.jpg",
+        showings: [
+            { date: "2025-10-13", time: "21:00" },
+            { date: "2025-10-15", time: "21:00" }
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
         note: "Date in arrivo"
     }
+     
     
 ];
 
-// Function to format date
+// Funzione per formato data
 function formatDate(dateString) {
     const date = new Date(dateString);
     const options = { 
@@ -67,7 +75,7 @@ function formatDate(dateString) {
     return date.toLocaleDateString('it-IT', options);
 }
 
-// Function to group showings by date
+// Funzione per mostra gruppi in base alla data
 function groupShowingsByDate(showings) {
     const grouped = {};
     showings.forEach(showing => {
@@ -79,10 +87,10 @@ function groupShowingsByDate(showings) {
     return grouped;
 }
 
-// Function to generate schedule HTML
+// Funzione per generare il calendario HTML
 function generateScheduleHTML(showings) {
     if (!showings || showings.length === 0) {
-        return '<div class="no-showings">Nessuna programmazione disponibile</div>';
+        return '<div class="no-showings" style="font-weight: bold;">Prossimamente</div>';
     }
 
     const grouped = groupShowingsByDate(showings);
@@ -104,7 +112,7 @@ function generateScheduleHTML(showings) {
     return html;
 }
 
-// Function to handle button click
+// Funzione per gestire click bottone "Prenota"
 function handleBookingClick(filmIndex) {
     console.log('handleBookingClick called with index:', filmIndex);
     
@@ -128,7 +136,7 @@ function handleBookingClick(filmIndex) {
     }
 }
 
-// Function to load programming
+// Funzione per caricare la programmazione
 function loadProgrammazione() {
     const container = document.getElementById('filmsContainer');
     
