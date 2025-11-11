@@ -587,6 +587,97 @@ body {
     margin-top: 1rem;
 }
 
+/* --- Stili per il Menu Dropdown (Desktop) --- */
+.dropdown {
+    position: relative; /* Contenitore per il menu */
+}
+
+.dropdown-toggle span {
+    font-size: 0.7rem; /* Stile per la freccetta */
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle span {
+    transform: rotate(180deg); /* Ruota la freccia in hover */
+}
+
+.dropdown-menu {
+    display: none; /* Nascosto di default */
+    position: absolute;
+    top: 100%; /* Appare subito sotto */
+    left: 0;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1002;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Visibile in hover sul genitore .dropdown */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem; /* Più padding per i link del dropdown */
+    color: #333;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-menu a:hover {
+    background: linear-gradient(45deg, #ff6b35, #ffd93d); /* Usa lo stesso hover dei nav-links */
+    color: white;
+    transform: none; /* Rimuove il translateY(-2px) */
+}
+
+
+/* --- Stili per la Nuova Gallery --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene le proporzioni e riempie lo spazio */
+    object-position: center;
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;

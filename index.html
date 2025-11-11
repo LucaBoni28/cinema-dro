@@ -22,7 +22,13 @@
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#programmazione">Programmazione</a></li>
-                    <li><a href="#teatro">Teatro</a></li>
+                    <li class="dropdown">
+                        <a href="#teatro" class="dropdown-toggle">Teatro <span>&#9662;</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#teatro">La Nostra Offerta</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contatti">Contatti</a></li>
                     <li><a href="#trasparenza">Trasparenza</a></li>
                     <!-- <li><a href="#nextgen">Next Generation EU</a></li> -->
@@ -47,7 +53,7 @@
     <section class="section" id="programmazione">
         <div class="container">
             <h2 class="section-title">Programmazione Corrente</h2>
-
+            
             <a href="immagini/Locandina.jpg" download="Locandina-Cinema-Dro.jpg" class="download-poster-button">
                 Scarica la Locandina
             </a>
@@ -79,9 +85,7 @@
                 </div>
             </div>
 
-            <!-- <h2 class="section-title">Tariffe</h2> -->
                 <div class="price-container">
-
                     <div class="price-card">
                         <div class="price-icon">🎟️</div>
                         <h3>Biglietti Singoli</h3>
@@ -90,21 +94,49 @@
                             <li><strong>Intero:</strong> 7,00 €</li>
                             <li><strong>Ridotto:</strong> 5,00 €</li>
                         </ul>
-                        <p class="price-note">(La tariffa ridotta è valida fino ai 18 anni compiuti)</p>
+                        <p class="price-note">(La tariffa ridotta è valida dai 3 anni fino ai 18 anni compiuti)</p>
                     </div>
-
                     <div class="price-card">
                         <div class="price-icon">🎫</div>
                         <h3>Abbonamenti</h3>
                         <p>Risparmia con i nostri pacchetti di ingressi.</p>
                         <ul class="price-list">
                             <li><strong>Ridotto 10 Ingressi:</strong> 25,00 €</li>
-                            <li><strong>Intero 10 Ingressi:</strong> 45,00 €</li>
+                            <li><strong>Intero 10 Ingressi:</strong> 35,00 €</li>
                         </ul>
                         <p class="price-note">(Gli abbonamenti hanno validità annuale dal momento del pagamento)</p>
                     </div>
-
                 </div>
+        </div>
+    </section>
+
+    </section> <section class="section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery del Teatro</h2>
+            <p class="programmazione-intro" style="margin-bottom: 2.5rem;">
+                Alcuni scatti del nostro teatro e degli eventi ospitati.
+            </p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="immagini/f1.jpg" alt="Foto 1 del teatro">
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/jurassic_world_rebirth_ver8.jpg" alt="Foto 2 del teatro">
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/Locandina.jpg" alt="Foto 3 del teatro">
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/superman.jpg" alt="Foto 4 del teatro">
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/the-life-of-chuck.jpg" alt="Foto 5 del teatro">
+                </div>
+                <div class="gallery-item">
+                    <img src="immagini/oratorioFrontale.jpg" alt="Foto 6 del teatro">
+                </div>
+            </div>
         </div>
     </section>
 
