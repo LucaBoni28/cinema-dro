@@ -42,8 +42,8 @@ const films = [
         poster: "immagini/jurassic_world_rebirth_ver8.jpg",
         isPremiere: false,
         showings: [
-            { date: "2025-10-13", time: "21:00" },
-            { date: "2025-10-15", time: "21:00" }
+            // { date: " ", time: " " },
+            // { date: "2025-10-15", time: "21:00" }
         ],
         bookingUrl: "",
         note: ""
@@ -58,7 +58,7 @@ const films = [
             { date: "2025-10-15", time: "21:00" }
         ],
         bookingUrl: "https://ticket.cinebot.it/dro/",
-        note: "Date in arrivo"
+        note: ""
     }
      
     
@@ -90,7 +90,7 @@ function groupShowingsByDate(showings) {
 // Funzione per generare il calendario HTML
 function generateScheduleHTML(showings) {
     if (!showings || showings.length === 0) {
-        return '<div class="no-showings" style="font-weight: bold;">Prossimamente</div>';
+        return '<div class="no-showings">PROSSIMAMENTE</div>';
     }
 
     const grouped = groupShowingsByDate(showings);
@@ -171,7 +171,9 @@ function loadProgrammazione() {
                     <p><strong>Note:</strong> ${film.note}</p>
                 </div>
                 ${generateScheduleHTML(film.showings)}
-                <button class="book-button" data-film-index="${index}">Prenota ora</button>
+                ${ (film.showings && film.showings.length > 0) 
+                ? `<button class="book-button" data-film-index="${index}">Prenota ora</button>`
+                : ''}
             </div>
         `;
                
