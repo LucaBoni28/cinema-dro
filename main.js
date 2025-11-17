@@ -6,6 +6,11 @@ function showBookingInfo(filmTitle) {
     alert(`Presto sarà disponibile prenotare per "${filmTitle}"`);
 }
 
+// Functions to show additional information
+function GalleryWorkInProgress() {
+    alert('Sezione in costruzione. Presto sarà disponibile una galleria del Cinema Dro.');
+}
+
 // Informazione programmazione corrente
 // Per cercare la copertina dei film: http://www.impawards.com/
 const films = [
@@ -26,7 +31,7 @@ const films = [
         genre: "Azione",
         duration: "155 min",
         poster: "immagini/f_one_ver2.jpg",
-        isPremiere: true,
+        isPremiere: false,
         showings: [
             { date: "2025-10-11", time: "21:00" },
             { date: "2025-10-12", time: "21:00" }
@@ -40,9 +45,9 @@ const films = [
         genre: "Documentario",
         duration: "94 min",
         poster: "immagini/jurassic_world_rebirth_ver8.jpg",
-        isPremiere: false,
+        isPremiere: true,
         showings: [
-            // { date: " ", time: " " },
+            // { date: "2025-10-16", time: "20:00  " },
             // { date: "2025-10-15", time: "21:00" }
         ],
         bookingUrl: "",
@@ -197,17 +202,6 @@ function loadProgrammazione() {
 
     console.log('Programming loaded successfully');
 }
-
-// Functions to show additional information
-
-// function showContributions() {
-//     alert('Sezione in costruzione. Qui verranno mostrati tutti i contributi pubblici ricevuti dall\'associazione con dettagli su importi, finalità e utilizzo dei fondi.');
-// }
-
-// function showPNRRProjects() {
-//     alert('Sezione in costruzione. Qui verranno mostrati tutti i progetti finanziati dal PNRR con cronologie, obiettivi e risultati raggiunti.');
-// }
-
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
